@@ -22,6 +22,8 @@ program
   .option("-P, --path <path>", "URL path to post proxied requests to`", "/")
   .parse(process.argv);
 
+console.log("program", program);
+
 let target;
 if (program.target) {
   target = program.target;
