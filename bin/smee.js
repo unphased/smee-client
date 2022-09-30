@@ -22,7 +22,14 @@ program
   .option("-P, --path <path>", "URL path to post proxied requests to`", "/")
   .parse(process.argv);
 
-console.log("program", program);
+console.log(
+  "program url",
+  program.url,
+  "port",
+  program.port,
+  "path",
+  program.path
+);
 
 let target;
 if (program.target) {
