@@ -5,7 +5,7 @@ const { version } = require("../package.json");
 
 const Client = require("..");
 
-console.error("input args are: ", process.argv);
+console.log("input args are: ", process.argv);
 
 program
   .version(version, "-v, --version")
